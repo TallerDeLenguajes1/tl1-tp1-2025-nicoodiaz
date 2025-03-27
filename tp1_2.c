@@ -23,6 +23,12 @@ int main()
 
     //4) b.
     numAlCuadrado(numAElevar);
+
+    //4) c.
+    int edad;
+    printf("\nIngrese su edad: \n");
+    scanf("%d", &edad);
+    printf("\nLa direccion de la variable edad es %p y su contenido es %d \n", &edad, edad);
     return 0;
 }
 
