@@ -12,6 +12,9 @@ void numAlCuadrado(int num2);
 //4) d.
 void  invertir(int a, int b);
 
+//4) e.
+void orden(int a, int b);
+
 int main()
 {
     //4) a.
@@ -42,6 +45,9 @@ int main()
 
     printf("Numero A: %d y Numero B: %d", numA, numB);
     invertir(numA, numB);
+
+    //4) e.
+    orden(numA, numB);
     
     return 0;
 }
@@ -66,4 +72,16 @@ void  invertir(int a, int b)
     a = b;
     b = pivote;
     printf("\nDespues de invertir, Numero A: %d y Numero B: %d\n", a, b);
+}
+
+void orden(int a, int b) 
+{
+    int pivote;
+    if (a > b)
+    {
+        pivote = a;
+        a = b;
+        b = pivote;
+    }
+    printf("\nDespues de ordenar, Numero A: %d y Numero B: %d\n", a, b);
 }
